@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DoxySettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SettingsFile>C:\Users\kkote\Desktop\Line Following with Path Planning\Line Following with Path Planning\doxySettings.xml</SettingsFile>
+  <ProjectName>line_follow_path_plan</ProjectName>
+  <DoxyExePath>C:\Program Files\doxygen\bin\doxygen.exe</DoxyExePath>
+  <UseDefaultSettings>false</UseDefaultSettings>
+  <GenerateAsPartOfBuild>false</GenerateAsPartOfBuild>
+  <ConfigFilePath>C:\Users\kkote\Desktop\MOOC_resources\Week4_Resources\dconfig</ConfigFilePath>
+  <OutputDirPath>C:\Users\kkote\Desktop\Line Following with Path Planning\Line Following with Path Planning</OutputDirPath>
+  <ShowErrorsAndWarnings>false</ShowErrorsAndWarnings>
+</DoxySettings>

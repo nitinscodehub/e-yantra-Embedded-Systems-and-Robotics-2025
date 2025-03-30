@@ -1,0 +1,302 @@
+
+Experiment-1.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800200  00800200  000001cc  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000178  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  000001cc  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  000001fc  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000050  00000000  00000000  0000023c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00000cfb  00000000  00000000  0000028c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000bad  00000000  00000000  00000f87  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   00000364  00000000  00000000  00001b34  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  000000cc  00000000  00000000  00001e98  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    00000597  00000000  00000000  00001f64  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    000000cb  00000000  00000000  000024fb  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000040  00000000  00000000  000025c6  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	71 c0       	rjmp	.+226    	; 0xe4 <__ctors_end>
+   2:	00 00       	nop
+   4:	79 c0       	rjmp	.+242    	; 0xf8 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	77 c0       	rjmp	.+238    	; 0xf8 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	75 c0       	rjmp	.+234    	; 0xf8 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	73 c0       	rjmp	.+230    	; 0xf8 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	71 c0       	rjmp	.+226    	; 0xf8 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	6f c0       	rjmp	.+222    	; 0xf8 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	6d c0       	rjmp	.+218    	; 0xf8 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	7d c0       	rjmp	.+250    	; 0x11c <__vector_8>
+  22:	00 00       	nop
+  24:	69 c0       	rjmp	.+210    	; 0xf8 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	67 c0       	rjmp	.+206    	; 0xf8 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	65 c0       	rjmp	.+202    	; 0xf8 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	63 c0       	rjmp	.+198    	; 0xf8 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	61 c0       	rjmp	.+194    	; 0xf8 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	5f c0       	rjmp	.+190    	; 0xf8 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	5d c0       	rjmp	.+186    	; 0xf8 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	5b c0       	rjmp	.+182    	; 0xf8 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	59 c0       	rjmp	.+178    	; 0xf8 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	57 c0       	rjmp	.+174    	; 0xf8 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	55 c0       	rjmp	.+170    	; 0xf8 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	53 c0       	rjmp	.+166    	; 0xf8 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	51 c0       	rjmp	.+162    	; 0xf8 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	4f c0       	rjmp	.+158    	; 0xf8 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	4d c0       	rjmp	.+154    	; 0xf8 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	4b c0       	rjmp	.+150    	; 0xf8 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	49 c0       	rjmp	.+146    	; 0xf8 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	47 c0       	rjmp	.+142    	; 0xf8 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	45 c0       	rjmp	.+138    	; 0xf8 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	43 c0       	rjmp	.+134    	; 0xf8 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	41 c0       	rjmp	.+130    	; 0xf8 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	3f c0       	rjmp	.+126    	; 0xf8 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	3d c0       	rjmp	.+122    	; 0xf8 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	3b c0       	rjmp	.+118    	; 0xf8 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	39 c0       	rjmp	.+114    	; 0xf8 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	37 c0       	rjmp	.+110    	; 0xf8 <__bad_interrupt>
+  8a:	00 00       	nop
+  8c:	35 c0       	rjmp	.+106    	; 0xf8 <__bad_interrupt>
+  8e:	00 00       	nop
+  90:	33 c0       	rjmp	.+102    	; 0xf8 <__bad_interrupt>
+  92:	00 00       	nop
+  94:	31 c0       	rjmp	.+98     	; 0xf8 <__bad_interrupt>
+  96:	00 00       	nop
+  98:	2f c0       	rjmp	.+94     	; 0xf8 <__bad_interrupt>
+  9a:	00 00       	nop
+  9c:	2d c0       	rjmp	.+90     	; 0xf8 <__bad_interrupt>
+  9e:	00 00       	nop
+  a0:	2b c0       	rjmp	.+86     	; 0xf8 <__bad_interrupt>
+  a2:	00 00       	nop
+  a4:	29 c0       	rjmp	.+82     	; 0xf8 <__bad_interrupt>
+  a6:	00 00       	nop
+  a8:	27 c0       	rjmp	.+78     	; 0xf8 <__bad_interrupt>
+  aa:	00 00       	nop
+  ac:	25 c0       	rjmp	.+74     	; 0xf8 <__bad_interrupt>
+  ae:	00 00       	nop
+  b0:	23 c0       	rjmp	.+70     	; 0xf8 <__bad_interrupt>
+  b2:	00 00       	nop
+  b4:	21 c0       	rjmp	.+66     	; 0xf8 <__bad_interrupt>
+  b6:	00 00       	nop
+  b8:	1f c0       	rjmp	.+62     	; 0xf8 <__bad_interrupt>
+  ba:	00 00       	nop
+  bc:	1d c0       	rjmp	.+58     	; 0xf8 <__bad_interrupt>
+  be:	00 00       	nop
+  c0:	1b c0       	rjmp	.+54     	; 0xf8 <__bad_interrupt>
+  c2:	00 00       	nop
+  c4:	19 c0       	rjmp	.+50     	; 0xf8 <__bad_interrupt>
+  c6:	00 00       	nop
+  c8:	17 c0       	rjmp	.+46     	; 0xf8 <__bad_interrupt>
+  ca:	00 00       	nop
+  cc:	15 c0       	rjmp	.+42     	; 0xf8 <__bad_interrupt>
+  ce:	00 00       	nop
+  d0:	13 c0       	rjmp	.+38     	; 0xf8 <__bad_interrupt>
+  d2:	00 00       	nop
+  d4:	11 c0       	rjmp	.+34     	; 0xf8 <__bad_interrupt>
+  d6:	00 00       	nop
+  d8:	0f c0       	rjmp	.+30     	; 0xf8 <__bad_interrupt>
+  da:	00 00       	nop
+  dc:	0d c0       	rjmp	.+26     	; 0xf8 <__bad_interrupt>
+  de:	00 00       	nop
+  e0:	0b c0       	rjmp	.+22     	; 0xf8 <__bad_interrupt>
+	...
+
+000000e4 <__ctors_end>:
+  e4:	11 24       	eor	r1, r1
+  e6:	1f be       	out	0x3f, r1	; 63
+  e8:	cf ef       	ldi	r28, 0xFF	; 255
+  ea:	d1 e2       	ldi	r29, 0x21	; 33
+  ec:	de bf       	out	0x3e, r29	; 62
+  ee:	cd bf       	out	0x3d, r28	; 61
+  f0:	00 e0       	ldi	r16, 0x00	; 0
+  f2:	0c bf       	out	0x3c, r16	; 60
+  f4:	3a d0       	rcall	.+116    	; 0x16a <main>
+  f6:	3e c0       	rjmp	.+124    	; 0x174 <_exit>
+
+000000f8 <__bad_interrupt>:
+  f8:	83 cf       	rjmp	.-250    	; 0x0 <__vectors>
+
+000000fa <buzzer_pin_config>:
+ */
+void buzzer_pin_config(void) {
+	// << NOTE >> : Use Masking and Shift Operators here
+
+	// Make **ONLY** Buzzer pin as output
+	buzzer_ddr_reg |= (1 << buzzer_pin);
+  fa:	3b 9a       	sbi	0x07, 3	; 7
+
+	// Turn **ONLY** the Buzzer pin LOW
+	buzzer_port_reg &= ~(1 << buzzer_pin) ;
+  fc:	43 98       	cbi	0x08, 3	; 8
+  fe:	08 95       	ret
+
+00000100 <interrupt_sw_pin_config>:
+ */
+void interrupt_sw_pin_config(void) {
+	// << NOTE >> : Use Masking and Shift Operators here
+
+	// Make **ONLY** Interrupt Switch pin as input
+	interrupt_sw_ddr_reg &= ~(1 << interrupt_sw_pin) ;
+ 100:	6f 98       	cbi	0x0d, 7	; 13
+
+	// Make **ONLY** Interrupt Switch pin internally pull-up
+	interrupt_sw_port_reg |= (1 << interrupt_sw_pin) ;
+ 102:	77 9a       	sbi	0x0e, 7	; 14
+ 104:	08 95       	ret
+
+00000106 <interrupt_sw_config>:
+ * @brief      Configures External Interrupt on the Interrupt Switch
+ */
+void interrupt_sw_config(void) {
+
+	// all interrupts have to be disabled before configuring interrupts
+	cli();	// Disables Interrupts Globally
+ 106:	f8 94       	cli
+	
+	// Turn ON INT7 (alternative function of PE7 i.e Interrupt Switch Pin)
+	EIMSK_reg = 0x80 ;
+ 108:	80 e8       	ldi	r24, 0x80	; 128
+ 10a:	8d bb       	out	0x1d, r24	; 29
+	
+	// Low level detection on INT7
+	EICRB_reg = 0x00;
+ 10c:	10 92 6a 00 	sts	0x006A, r1	; 0x80006a <__TEXT_REGION_LENGTH__+0x70006a>
+	
+	sei();	// Enable Interrupts Globally
+ 110:	78 94       	sei
+ 112:	08 95       	ret
+
+00000114 <buzzer_on>:
+}
+
+void buzzer_on(void)
+{
+	buzzer_port_reg |= (1 << buzzer_pin);             // Turn **ONLY** the Buzzer pin HIGH
+ 114:	43 9a       	sbi	0x08, 3	; 8
+ 116:	08 95       	ret
+
+00000118 <buzzer_off>:
+}
+
+void buzzer_off(void)
+{
+	buzzer_port_reg &= ~(1 << buzzer_pin) ;             // Turn **ONLY** the Buzzer pin LOW
+ 118:	43 98       	cbi	0x08, 3	; 8
+ 11a:	08 95       	ret
+
+0000011c <__vector_8>:
+}
+
+/**
+ * @brief      Interrupt Service Routine for INT7, which turns on the Buzzer when the Interrupt Switch is pressed
+ */
+ISR(interrupt_isr_vect) {
+ 11c:	1f 92       	push	r1
+ 11e:	0f 92       	push	r0
+ 120:	0f b6       	in	r0, 0x3f	; 63
+ 122:	0f 92       	push	r0
+ 124:	11 24       	eor	r1, r1
+ 126:	0b b6       	in	r0, 0x3b	; 59
+ 128:	0f 92       	push	r0
+ 12a:	2f 93       	push	r18
+ 12c:	3f 93       	push	r19
+ 12e:	4f 93       	push	r20
+ 130:	5f 93       	push	r21
+ 132:	6f 93       	push	r22
+ 134:	7f 93       	push	r23
+ 136:	8f 93       	push	r24
+ 138:	9f 93       	push	r25
+ 13a:	af 93       	push	r26
+ 13c:	bf 93       	push	r27
+ 13e:	ef 93       	push	r30
+ 140:	ff 93       	push	r31
+	buzzer_on();								// Turn on the Buzzer
+ 142:	e8 df       	rcall	.-48     	; 0x114 <buzzer_on>
+}
+ 144:	ff 91       	pop	r31
+ 146:	ef 91       	pop	r30
+ 148:	bf 91       	pop	r27
+ 14a:	af 91       	pop	r26
+ 14c:	9f 91       	pop	r25
+ 14e:	8f 91       	pop	r24
+ 150:	7f 91       	pop	r23
+ 152:	6f 91       	pop	r22
+ 154:	5f 91       	pop	r21
+ 156:	4f 91       	pop	r20
+ 158:	3f 91       	pop	r19
+ 15a:	2f 91       	pop	r18
+ 15c:	0f 90       	pop	r0
+ 15e:	0b be       	out	0x3b, r0	; 59
+ 160:	0f 90       	pop	r0
+ 162:	0f be       	out	0x3f, r0	; 63
+ 164:	0f 90       	pop	r0
+ 166:	1f 90       	pop	r1
+ 168:	18 95       	reti
+
+0000016a <main>:
+ * @details    Initializes the Buzzer Pin and the Interrupt Switch Pin. Turns ON and configure the alternate function (INT7) for PE7.
+ */
+int main(void) {
+	// << NOTE >> : You are not allowed to modify or change anything inside this function
+
+	buzzer_pin_config();			// Make the Buzzer Pin and OUTPUT
+ 16a:	c7 df       	rcall	.-114    	; 0xfa <buzzer_pin_config>
+	interrupt_sw_pin_config();		// Make the Interrupt Switch Pin as INPUT
+ 16c:	c9 df       	rcall	.-110    	; 0x100 <interrupt_sw_pin_config>
+	interrupt_sw_config();			// Turn ON and configure the Alternate Function (INT7) for PE7.
+ 16e:	cb df       	rcall	.-106    	; 0x106 <interrupt_sw_config>
+ 170:	d3 df       	rcall	.-90     	; 0x118 <buzzer_off>
+	while (1) {
+	buzzer_off();					// Turn **ONLY** the Buzzer pin LOW
+ 172:	fe cf       	rjmp	.-4      	; 0x170 <main+0x6>
+
+00000174 <_exit>:
+ 174:	f8 94       	cli
+
+00000176 <__stop_program>:
+ 176:	ff cf       	rjmp	.-2      	; 0x176 <__stop_program>
